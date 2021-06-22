@@ -1,0 +1,6 @@
+---
+- hosts: linuxserver
+  become: yes
+  tasks:
+    - name: install apache2
+      apt: name=httpd update_cache=yes state=latest
